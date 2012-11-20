@@ -8,7 +8,7 @@ else
 	filepath = "#{File.dirname(__FILE__)}/3d_northeast.xml"
 end
 
-fontFace = FontFaceUtils.loadXml(ARGV[0])
+fontFace = FontFaceUtils.loadXml(filepath)
 
 begin
 	while true
@@ -18,5 +18,5 @@ begin
 		sleep(1)
 	end
 rescue
-	quit
+	
 end
