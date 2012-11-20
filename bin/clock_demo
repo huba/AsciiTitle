@@ -1,14 +1,22 @@
 #!/usr/bin/env ruby
 require 'ascii_title'
-
-
 include AsciiTitle
 
-f3dNortheast = FontFaceUtils.loadXml(ARGV[0])
+if ARGV[0]
+	filepath = ARGV[0]
+else
+	filepath = "#{File.dirname(__FILE__)}/3d_northeast.xml"
+end
 
-while true
-	puts "\e[H\e[2J"
-	time = Time.new
-	puts ("    Time:\n #{time.hour}:#{time.min}:#{time.sec}").to_s.ascii_title(f3dNortheast)
-	sleep(1)
+fontFace = FontFaceUtils.loadXml(ARGV[0])
+
+begin
+	while true
+		puts "\e[H\e[2J"
+		time = Time.new
+		puts ("    Time:\n #{time.hour}:#{time.min}:#{time.sec}").ascii_title(font_face)
+		sleep(1)
+	end
+rescue
+	quit
 end

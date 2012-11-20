@@ -10,14 +10,14 @@ functionalities for example there are no text boxes or builtin fonts yet.
 
 [![Build Status](https://travis-ci.org/huba/AsciiTitle.png)](https://travis-ci.org/huba/AsciiTitle)
 
-## Features
+### Features
 
 * Adds new method to the String class which turns the string into ascii art.
 * New font styles can be described in xml.
 * Only uses standard ruby libraries, so no dependencies to worry about (although
 rake and bundler are useful for building the gem).
 
-## Desired Features
+### Desired Features
 
 * Text boxes.
 * Support for "\t" character.
@@ -100,6 +100,25 @@ and so on... Save it as whatever.xml.
 	#use the font face by passing it to the ascii_title method of the String class
 	puts "Hello\nWorld".ascii_title(fontFace)
 ```
+
+### Running the Example Script
+
+After running `rake install`, you can run:
+```
+	clock_demo /wherever/you/saved/your/own/font.xml
+```
+which will load up the font you made. Or just run:
+```
+	clock_demo
+```
+to use the default 3D Northeast font.
+
+Make sure that `/var/lib/gems/[version]/bin` is in your path. If not
+then run:
+```
+	export $PATH=PATH:/var/lib/gems/[version]/bin
+```
+before executing the script.
 
 ## Contributing
 
