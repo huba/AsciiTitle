@@ -4,7 +4,7 @@ require 'ascii_title'
 
 include AsciiTitle
 
-f3dNortheast = FontFaceUtils.loadXml('3d_northeast.xml')
+f3dNortheast = FontFaceUtils.loadXml(ARGV[0])
 
 while true
 	puts "\e[H\e[2J"
