@@ -1,0 +1,14 @@
+require 'rubygems'
+require 'ascii_title'
+
+
+include AsciiTitle
+
+f3dNortheast = FontFaceUtils.loadXml('3d_northeast.xml')
+
+while true
+	puts "\e[H\e[2J"
+	time = Time.new
+	puts ("    Time:\n #{time.hour}:#{time.min}:#{time.sec}").to_s.ascii_title(f3dNortheast)
+	sleep(1)
+end
