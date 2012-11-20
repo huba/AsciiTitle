@@ -8,6 +8,8 @@ else
 	filepath = "#{File.dirname(__FILE__)}/3d_northeast.xml"
 end
 
+puts filepath
+
 fontFace = FontFaceUtils.loadXml(filepath)
 
 begin
