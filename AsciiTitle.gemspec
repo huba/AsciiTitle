@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'AsciiTitle/version'
+require 'ascii_title/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "AsciiTitle"
+  gem.name          = "ascii_title"
   gem.version       = AsciiTitle::VERSION
   gem.authors       = ["Huba Nagy"]
   gem.email         = ["12huba@gmail.com"]
