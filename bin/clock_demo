@@ -1,4 +1,4 @@
-require 'rubygems'
+#!/usr/bin/env ruby
 require 'ascii_title'
 
 
