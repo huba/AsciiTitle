@@ -14,7 +14,7 @@ fontFace = FontFaceUtils.loadXml(filepath)
 
 begin
 	while true
-		puts "\e[H\e[2J"
+		#puts "\e[H\e[2J"
 		time = Time.new
 		puts ("    Time:\n #{time.hour}:#{time.min}:#{time.sec}").ascii_title(font_face)
 		sleep(1)
