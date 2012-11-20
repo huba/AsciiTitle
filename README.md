@@ -89,8 +89,8 @@ and so on... Save it as whatever.xml.
 ### Using the Fonts
 
 ```ruby
-	require "ascii_art"
-	include AsciiArt
+	require "ascii_title"
+	include AsciiTitle
 	
 	#load the font style from your xml
 	fontFace = FontFaceUtils.loadXml("/wherever/you/saved/the/font_description.xml")
