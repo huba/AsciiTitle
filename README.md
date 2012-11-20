@@ -8,6 +8,8 @@ AsciiTitle is a toolkit for turning ordinary ruby strings into exciting Ascii ar
 a complete rewrite of [PyAsciiArt](http://github.com/huba/PyAsciiArt). Although it has less
 functionalities for example there are no text boxes or builtin fonts yet.
 
+[![Build Status](https://travis-ci.org/huba/AsciiTitle.png)](https://travis-ci.org/huba/AsciiTitle)
+
 ## Features
 
 * Adds new method to the String class which turns the string into ascii art.
