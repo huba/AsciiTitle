@@ -116,7 +116,7 @@ to use the default 3D Northeast font.
 Make sure that `/var/lib/gems/[version]/bin` is in your path. If not
 then run:
 ```
-	export $PATH=PATH:/var/lib/gems/[version]/bin
+	export PATH=$PATH:/var/lib/gems/[version]/bin
 ```
 before executing the script.
 
