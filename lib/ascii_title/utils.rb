@@ -47,7 +47,7 @@ module AsciiTitle
 			
 				return fontFace
 			rescue
-				puts 'Some error happened!'
+				$stderr.puts 'Some error happened!'
 			end
 		end
 	
@@ -59,7 +59,7 @@ module AsciiTitle
 				end
 				return character
 			else
-				puts 'Element is not defining a character.'
+				$stderr.puts 'Element is not defining a character.'
 			end
 		end
 	end

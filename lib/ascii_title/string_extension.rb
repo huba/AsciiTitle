@@ -6,10 +6,9 @@ class String
 	def ascii_title(fontFace)
 		begin
 			title = ''
-			self.to_a("\n").each do |text_line| 
-				text_line.slice!("\n")
+			self.each_line do |text_line| 
 				(1..fontFace.lines).each do |line|
-					text_line.each_char do |character|
+					text_line.chomp.each_char do |character|
 						if character == "\n"
 							puts "newline"
 						end
@@ -26,7 +25,7 @@ class String
 			
 			return title
 		rescue
-			puts "Something wrong with the font: #{fontFace.name}!"
+			$stderr.puts "Something wrong with the font: #{fontFace.name}!"
 		end
 	end
 end

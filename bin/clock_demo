@@ -14,12 +14,12 @@ fontFace = FontFaceUtils.loadXml(filepath)
 
 begin
 	while true
-		#puts "\e[H\e[2J"
+		puts "\e[H\e[2J"
 		time = Time.new
 		puts ("    Time:\n #{time.hour}:#{time.min}:#{time.sec}").ascii_title(fontFace)
 		sleep(1)
 	end
 rescue
-	puts "No such file as #{filepath}!"
-	puts "Exiting..."
+	puts "No such file as #{filepath}!" 
+	puts "Exiting..." 
 end

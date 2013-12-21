@@ -22,7 +22,7 @@ module AsciiTitle
 			begin
 				return @characters[character_name.to_sym][line]
 			rescue
-				puts "No character called #{character_name}!"
+				$stderr.puts "No character called #{character_name}!"
 			end
 		end
 	end
